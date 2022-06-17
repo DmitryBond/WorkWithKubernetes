@@ -3,7 +3,7 @@
   <summary>Описание</summary>
   <ol>
     <li>
-      <a href="#install-minikube">Install minikube</a>
+      <a href="#install-minikube">Установка minikube</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
@@ -26,5 +26,5 @@
 
 
 
-<!-- Install minikube -->
+<!-- Установка minikube -->
 ## Install minikube
