@@ -3,13 +3,10 @@
   <summary>Описание</summary>
   <ol>
     <li>
-      <a href="#установка-minikube">Установка minikube</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
+      <a href="#Установите-minikube-согласно-инструкции-на-официальном-сайте">Установите minikube согласно инструкции на официальном сайте.</a>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#Создайте-namespace-для-деплоя-простого-веб-приложения.">Создайте namespace для деплоя простого веб приложения.</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
@@ -27,7 +24,7 @@
 
 
 <!-- INSTALL MINIKUBE -->
-## Установка minikube
+## Установите minikube согласно инструкции на официальном сайте.
   1. Установка kubectl.
   2. Установка Гипервизора (Hyper-V, VirtualBox)
   3. Установка Minikube вручную.Загрузить minikube-windows-amd64, переименовать его в minikube.exe и добить его в директорию исполняемых файлов.
@@ -51,4 +48,8 @@
     <img src="images/minikube_status.PNG">
   </a>
   <p align="center">
-
+    
+      Кластер работает, minikube запущен.
+    
+    <!-- CREATE NAMESPACE DEPLOY -->
+## Создайте namespace для деплоя простого веб приложения.
