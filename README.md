@@ -36,5 +36,9 @@
        minikube start --vm-driver=<driver_name>
       ```
       где --vm-driver=<enter_driver_name> - драйвер виртуальной машины.
-  
+  <p align="left">
+  <a href="https://github.com/DmitryBond/WorkWithKubernetes/blob/main/images/start_kube.PNG">
+    <img src="images/start_kube.PNG">
+  </a>
+  <p align="left">
   
