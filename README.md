@@ -52,6 +52,6 @@
       Кластер работает, minikube запущен.
     
     
-    
-    <!-- CREATE NAMESPACE DEPLOY -->
+   
+<!-- CREATE NAMESPACE DEPLOY -->
 ## Создайте namespace для деплоя простого веб приложения.
