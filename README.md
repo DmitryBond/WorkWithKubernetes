@@ -42,3 +42,13 @@
   </a>
   <p align="left">
   
+   5. После того, как команда minikube start отработала успешно, выполните команду для проверки состояния кластера:
+      ```sh
+      minikube status
+      ```
+      <p align="left">
+  <a href="https://github.com/DmitryBond/WorkWithKubernetes/blob/main/images/minikube_status.PNG">
+    <img src="images/minikube_status.PNG">
+  </a>
+  <p align="left">
+
