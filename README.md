@@ -3,7 +3,7 @@
   <summary>Описание</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#install-minikube">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
@@ -26,5 +26,5 @@
 
 
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+<!-- Install minikube -->
+## Install minikube
