@@ -55,3 +55,4 @@
    
 <!-- CREATE NAMESPACE DEPLOY -->
 ## Создайте namespace для деплоя простого веб приложения.
+    
