@@ -26,5 +26,5 @@
 
 
 
-<!-- Установка minikube -->
-## Install minikube
+<!-- install minikube -->
+## Установка minikube
