@@ -36,19 +36,19 @@
        minikube start --vm-driver=<driver_name>
       ```
       где --vm-driver=<enter_driver_name> - драйвер виртуальной машины.
-  <p align="left">
+  <p align="center">
   <a href="https://github.com/DmitryBond/WorkWithKubernetes/blob/main/images/start_kube.PNG">
     <img src="images/start_kube.PNG">
   </a>
-  <p align="left">
+  <p align="center">
   
    5. После того, как команда minikube start отработала успешно, выполните команду для проверки состояния кластера:
       ```sh
       minikube status
       ```
-      <p align="left">
+      <p align="center">
   <a href="https://github.com/DmitryBond/WorkWithKubernetes/blob/main/images/minikube_status.PNG">
     <img src="images/minikube_status.PNG">
   </a>
-  <p align="left">
+  <p align="center">
 
