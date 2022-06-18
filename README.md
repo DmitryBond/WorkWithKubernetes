@@ -191,28 +191,28 @@ spec:
   ```
   После внесения этого изменения веб-браузер отправляет запросы URL-адресов hello-world.local в Minikube
     
-      ```sh
+  ```sh
   kubectl get pods -A
   ```
-    <p align="left">
+  <p align="left">
   <a href="https://github.com/DmitryBond/WorkWithKubernetes/blob/main/images/get_pods_a.PNG">
     <img src="images/get_pods_a.PNG">
   </a>
   <p align="left">
     
-      ```sh
+  ```sh
   kubectl get svc
   ```
-    <p align="left">
+  <p align="left">
   <a href="https://github.com/DmitryBond/WorkWithKubernetes/blob/main/images/get_svc.PNG">
     <img src="images/get_svc.PNG">
   </a>
   <p align="left"> 
     
-      ```sh
+  ```sh
   kubectl get all
   ```
-    <p align="left">
+  <p align="left">
   <a href="https://github.com/DmitryBond/WorkWithKubernetes/blob/main/images/get_all.PNG">
     <img src="images/get_all.PNG">
   </a>
