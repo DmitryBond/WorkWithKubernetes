@@ -21,10 +21,10 @@
 
 <!-- INSTALL MINIKUBE -->
 ## Установите minikube согласно инструкции на официальном сайте.
-  1. Установка kubectl.
-  2. Установка Гипервизора (Hyper-V, VirtualBox)
-  3. Установка Minikube вручную.Загрузить minikube-windows-amd64, переименовать его в minikube.exe и добить его в директорию исполняемых файлов.
-  4. Чтобы убедиться в том, что гипервизор и Minikube были установлены корректно, необохдимо выполнить следующую команду, которая запускает локальный кластер Kubernetes:
+  1. Установите kubectl.
+  2. Установите Гипервизора (Hyper-V, VirtualBox)
+  3. Установите Minikube вручную.Загрузить minikube-windows-amd64, переименовать его в minikube.exe и добить его в директорию исполняемых файлов.
+  4. Убедитесь, что гипервизор и Minikube были установлены корректно. Для этого выполните следующую команду, которая запускает локальный кластер Kubernetes:
       ```sh
        minikube start --vm-driver=<driver_name>
       ```
@@ -52,7 +52,7 @@
 <!-- CREATE NAMESPACE DEPLOY -->
 ## Создайте namespace для деплоя простого веб приложения.
     
-  Создание объекта namespace  `web-namespace.yaml`
+  Создайте объект namespace  `web-namespace.yaml`
    ```JS
    ---
 apiVersion: v1
@@ -72,7 +72,7 @@ metadata:
 <!-- FILE FOR INSTALL WEB -->    
 ## Напишите deployments файл для установки в Kubernetes простого веб приложения.
     
-  Файл манифеста для deployment `deploy-hello-world.yaml`
+  Создайте файл манифеста для deployment `deploy-hello-world.yaml`
    ```JS
 apiVersion: apps/v1
 kind: Deployment
@@ -95,12 +95,18 @@ spec:
           ports:
             - containerPort: 8000
    ```
-    Запускаем файл
+ Запустите файл
+    
   <p align="left">
   <a href="https://github.com/DmitryBond/WorkWithKubernetes/blob/main/images/deploy_hello_world.png">
     <img src="images/deploy_hello_world.png">
   </a>
   <p align="left">
     
-  
+  Посмотрите на результат
+      <p align="left">
+  <a href="https://github.com/DmitryBond/WorkWithKubernetes/blob/main/images/result-hello-world.PNG">
+    <img src="images/PNGresult-hello-world.PNG">
+  </a>
+  <p align="left">
     
