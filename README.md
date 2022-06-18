@@ -194,7 +194,7 @@ spec:
       ```sh
   kubectl get pods -A
   ```
-  <p align="left">
+    <p align="left">
   <a href="https://github.com/DmitryBond/WorkWithKubernetes/blob/main/images/get_pods_a.PNG">
     <img src="images/get_pods_a.PNG">
   </a>
@@ -203,7 +203,7 @@ spec:
       ```sh
   kubectl get svc
   ```
-  <p align="left">
+    <p align="left">
   <a href="https://github.com/DmitryBond/WorkWithKubernetes/blob/main/images/get_svc.PNG">
     <img src="images/get_svc.PNG">
   </a>
@@ -212,7 +212,7 @@ spec:
       ```sh
   kubectl get all
   ```
-  <p align="left">
+    <p align="left">
   <a href="https://github.com/DmitryBond/WorkWithKubernetes/blob/main/images/get_all.PNG">
     <img src="images/get_all.PNG">
   </a>
