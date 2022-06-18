@@ -38,7 +38,7 @@ Kubernetes
       ```sh
       minikube status
       ```
-      <p align="left">
+  <p align="left">
   <a href="https://github.com/DmitryBond/WorkWithKubernetes/blob/main/images/minikube_status.PNG">
     <img src="images/minikube_status.PNG">
   </a>
