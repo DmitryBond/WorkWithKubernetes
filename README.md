@@ -11,9 +11,6 @@
     <li><a href="#Напишите-deployments-файл-для-установки-в-Kubernetes-простого-веб-приложения">Напишите deployments файл для установки в Kubernetes простого веб приложения, например https://github.com/crccheck/docker-hello-world.</a></li>
     <li><a href="#Установите-в-кластер-ingress-контроллер">Установите в кластер ingress контроллер.</a></li>
     <li><a href="#Напишите-и-установите-Ingress-rule-для-получения-доступа-к-своему-приложению.">Напишите и установите Ingress rule для получения доступа к своему приложению.</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
 
@@ -192,3 +189,31 @@ spec:
       ADDRESS         HOSTS
   192.168.59.101 hello-world.local 
   ```
+  После внесения этого изменения веб-браузер отправляет запросы URL-адресов hello-world.local в Minikube
+    
+      ```sh
+  kubectl get pods -A
+  ```
+  <p align="left">
+  <a href="https://github.com/DmitryBond/WorkWithKubernetes/blob/main/images/get_pods_a.PNG">
+    <img src="images/get_pods_a.PNG">
+  </a>
+  <p align="left">
+    
+      ```sh
+  kubectl get svc
+  ```
+  <p align="left">
+  <a href="https://github.com/DmitryBond/WorkWithKubernetes/blob/main/images/get_svc.PNG">
+    <img src="images/get_svc.PNG">
+  </a>
+  <p align="left"> 
+    
+      ```sh
+  kubectl get all
+  ```
+  <p align="left">
+  <a href="https://github.com/DmitryBond/WorkWithKubernetes/blob/main/images/get_all.PNG">
+    <img src="images/get_all.PNG">
+  </a>
+  <p align="left">  
