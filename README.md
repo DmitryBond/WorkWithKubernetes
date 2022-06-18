@@ -1,40 +1,40 @@
-Работа с Kubernetes
+Kubernetes
 
-<!-- Описание -->
+<!-- Description -->
 <details open="open">
-  <summary>Описание</summary>
+  <summary>Description</summary>
   <ol>
     <li>
-      <a href="#Установите-minikube-согласно-инструкции-на-официальном-сайте">Установите minikube согласно инструкции на официальном сайте.</a>
+      <a href="#Установите-minikube-согласно-инструкции-на-официальном-сайте">Minikube installation;</a>
     </li>
     <li>
-      <a href="#Создайте-namespace-для-деплоя-простого-веб-приложения">Создайте namespace для деплоя простого веб приложения.</a>
+      <a href="#Создайте-namespace-для-деплоя-простого-веб-приложения">Create namespace to deploy web app;</a>
     </li>
-    <li><a href="#Напишите-deployments-файл-для-установки-в-Kubernetes-простого-веб-приложения">Напишите deployments файл для установки в Kubernetes простого веб приложения, например https://github.com/crccheck/docker-hello-world.</a></li>
-    <li><a href="#Установите-в-кластер-ingress-контроллер">Установите в кластер ingress контроллер.</a></li>
-    <li><a href="#Напишите-и-установите-Ingress-rule-для-получения-доступа-к-своему-приложению.">Напишите и установите Ingress rule для получения доступа к своему приложению.</a></li>
+    <li><a href="#Напишите-deployments-файл-для-установки-в-Kubernetes-простого-веб-приложения">Create deployments file to install web app in Kubernetes, for example https://github.com/crccheck/docker-hello-world;</a></li>
+    <li><a href="#Установите-в-кластер-ingress-контроллер">Install an ingress controller in the cluster;</a></li>
+    <li><a href="#Напишите-и-установите-Ingress-rule-для-получения-доступа-к-своему-приложению.">Write and install Ingress rule to get access to the app.</a></li>
   </ol>
 </details>
 
 
 
 <!-- INSTALL MINIKUBE -->
-## Установите minikube согласно инструкции на официальном сайте.
-  1. Установите kubectl.
-  2. Установите Гипервизора (Hyper-V, VirtualBox)
-  3. Установите Minikube вручную.Загрузить minikube-windows-amd64, переименовать его в minikube.exe и добить его в директорию исполняемых файлов.
-  4. Убедитесь, что гипервизор и Minikube были установлены корректно. Для этого выполните следующую команду, которая запускает локальный кластер Kubernetes:
+## Minikube installation (according to the instructions on the official website).
+  1. Kubectl installation.
+  2. Hyper-V, VirtualBox installation.
+  3. Minikube manual installation. Minikube-windows-amd64 loading, renameing in minikube.exe,  adding to executable directory.
+  4. Check correct loading of Hyper-V, Minikube. Use a command that starts the local cluster Kubernetes:
       ```sh
        minikube start --vm-driver=<driver_name>
       ```
-      где --vm-driver=<enter_driver_name> - драйвер виртуальной машины.
+      где --vm-driver=<enter_driver_name> - virtual machine driver.
   <p align="left">
   <a href="https://github.com/DmitryBond/WorkWithKubernetes/blob/main/images/start_kube.PNG">
     <img src="images/start_kube.PNG">
   </a>
   <p align="left">
   
-   5. После того, как команда minikube start отработала успешно, выполните команду для проверки состояния кластера:
+   5. After the minikube start command was successful, start command for checking the status of the cluster:
       ```sh
       minikube status
       ```
@@ -44,14 +44,14 @@
   </a>
   <p align="left">
     
-      Кластер работает, minikube запущен.
+     The cluster works, Minikube is running.
     
     
    
 <!-- CREATE NAMESPACE DEPLOY -->
-## Создайте namespace для деплоя простого веб приложения.
+## Create namespace to deploy web app.
     
-  Создайте объект namespace  `web-namespace.yaml`
+  Create an object namespace  `web-namespace.yaml`
    ```JS
 apiVersion: v1
 kind: Namespace
@@ -68,9 +68,9 @@ metadata:
 
     
 <!-- FILE FOR INSTALL WEB -->    
-## Напишите deployments файл для установки в Kubernetes простого веб приложения.
+## Create deployments file to install web app in Kubernetes.
     
-  Создайте файл манифеста для deployment `deploy-hello-world.yaml`
+  Create a manifesto file for deployment `deploy-hello-world.yaml`
    ```JS
 apiVersion: apps/v1
 kind: Deployment
@@ -93,7 +93,7 @@ spec:
           ports:
             - containerPort: 8000
    ```
- Запустите файл
+ Run the file
     
   <p align="left">
   <a href="https://github.com/DmitryBond/WorkWithKubernetes/blob/main/images/deploy_hello_world.png">
@@ -101,7 +101,7 @@ spec:
   </a>
   <p align="left">
     
-  Посмотрите на результат
+  Check the result
   <p align="left">
   <a href="https://github.com/DmitryBond/WorkWithKubernetes/blob/main/images/result-hello-world.PNG">
     <img src="images/result-hello-world.PNG">
@@ -110,9 +110,9 @@ spec:
     
     
 <!-- INSTALL INGRESS CONTROLLER -->
-## Установите в кластер ingress контроллер.
+## Install an ingress controller in the cluster.
 
-  Включите входную надстройку для Minikube.
+  Turn on the input add-on for Minikube.
  
   ```sh
   minikube addons enable ingress
@@ -126,9 +126,9 @@ spec:
 
     
 <!-- WRITE AND INSTALL INGRESS RULE -->    
-## Напишите и установите Ingress rule для получения доступа к своему приложению
+## Write and install Ingress rule to get access to the app
     
-    1. Создайте манифест `ingress-host-rule.yaml`, который определяет вход, отправляющтй трафик в службу.
+    1. Create Manifest `ingress-host-rule.yaml`, which determines entry, that send traffic to service.
 
    ```JS
 apiVersion: v1
@@ -145,10 +145,7 @@ metadata:
   <p align="left">
 
     
-<!-- FILE FOR INSTALL WEB -->    
-## Напишите deployments файл для установки в Kubernetes простого веб приложения.
-    
-  Создайте файл манифеста для deployment `deploy-hello-world.yaml`
+  Create a manifest file for deployment `deploy-hello-world.yaml`
    ```JS
 apiVersion: networking.k8s.io/v1
 kind: Ingress
@@ -168,15 +165,15 @@ spec:
             port:
               number: 8080
    ```
- 2. Создайте объект Ingress
+ 2. Create an object Ingress
   ```sh
   kubectl apply -f deploy-hello-world.yaml
   ```
-  Вывод должен быть:
+  Data output should be:
   ```sh
   ingress.networking.k8s.io/webapp-hello-world-ingress configured
   ```
-  3. Убедитесь, что IP-адрес установлен:
+  3. Make sure the IP address is set:
   ```sh
   kubectl get ingress
   ```
@@ -186,12 +183,12 @@ spec:
   </a>
   <p align="left">
     
-  4. Добавьте строку в конец /etc/hosts файла на вашем компьютере:
+  4. Add a line /etc/hosts at the end of the file:
   ```sh
       ADDRESS         HOSTS
   192.168.59.101 hello-world.local 
   ```
-  После внесения этого изменения веб-браузер отправляет запросы URL-адресов hello-world.local в Minikube
+  After data entry web browser sends URL requests hello-world.local in Minikube
     
   ```sh
   kubectl get pods -A
