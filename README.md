@@ -10,7 +10,7 @@
     </li>
     <li><a href="#Напишите-deployments-файл-для-установки-в-Kubernetes-простого-веб-приложения">Напишите deployments файл для установки в Kubernetes простого веб приложения, например https://github.com/crccheck/docker-hello-world.</a></li>
     <li><a href="#Установите-в-кластер-ingress-контроллер">Установите в кластер ingress контроллер.</a></li>
-    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#Напишите-и-установите-Ingress-rule-для-получения-доступа-к-своему-приложению.">Напишите и установите Ingress rule для получения доступа к своему приложению.</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
@@ -124,3 +124,9 @@ spec:
     <img src="images/enable_ingress.png">
   </a>
   <p align="left">
+
+    
+<!-- WRITE AND INSTALL INGRESS RULE -->    
+## Напишите и установите Ingress rule для получения доступа к своему приложению.
+    
+    
