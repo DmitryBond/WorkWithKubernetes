@@ -62,7 +62,7 @@ metadata:
   labels:
     app: web
    ```
-          <p align="center">
+  <p align="center">
   <a href="https://github.com/DmitryBond/WorkWithKubernetes/blob/main/images/start_kube.PNG">
     <img src="images/start_kube.PNG">
   </a>
