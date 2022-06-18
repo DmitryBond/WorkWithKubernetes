@@ -106,7 +106,7 @@ spec:
   Посмотрите на результат
       <p align="left">
   <a href="https://github.com/DmitryBond/WorkWithKubernetes/blob/main/images/result-hello-world.PNG">
-    <img src="images/PNGresult-hello-world.PNG">
+    <img src="images/result-hello-world.PNG">
   </a>
   <p align="left">
     
