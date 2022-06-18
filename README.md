@@ -70,4 +70,4 @@ metadata:
 
     
 <!-- FILE FOR INSTALL WEB -->    
-## Напишите deployments файл для установки в Kubernetes простого веб приложения, например https://github.com/crccheck/docker-hello-world.
+## Напишите deployments файл для установки в Kubernetes простого веб приложения.
