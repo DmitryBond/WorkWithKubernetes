@@ -9,7 +9,7 @@
       <a href="#Создайте-namespace-для-деплоя-простого-веб-приложения">Создайте namespace для деплоя простого веб приложения.</a>
     </li>
     <li><a href="#Напишите-deployments-файл-для-установки-в-Kubernetes-простого-веб-приложения">Напишите deployments файл для установки в Kubernetes простого веб приложения, например https://github.com/crccheck/docker-hello-world.</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#Установите-в-кластер-ingress-контроллер">Установите в кластер ingress контроллер.</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -54,7 +54,6 @@
     
   Создайте объект namespace  `web-namespace.yaml`
    ```JS
-   ---
 apiVersion: v1
 kind: Namespace
 metadata:
@@ -110,3 +109,11 @@ spec:
   </a>
   <p align="left">
     
+    
+<!-- INSTALL INGRESS CONTROLLER -->
+## Установите в кластер ingress контроллер.
+
+  Включите входную надстройку для Minikube.
+      ```sh
+      minikube addons enable ingress
+      ```
