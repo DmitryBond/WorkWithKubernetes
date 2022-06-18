@@ -103,7 +103,7 @@ spec:
   <p align="left">
     
   Посмотрите на результат
-      <p align="left">
+  <p align="left">
   <a href="https://github.com/DmitryBond/WorkWithKubernetes/blob/main/images/result-hello-world.PNG">
     <img src="images/result-hello-world.PNG">
   </a>
@@ -118,3 +118,8 @@ spec:
   ```sh
   minikube addons enable ingress
   ```
+  <p align="left">
+  <a href="https://github.com/DmitryBond/WorkWithKubernetes/blob/main/images/enable_ingress.png">
+    <img src="images/enable_ingress.png">
+  </a>
+  <p align="left">
