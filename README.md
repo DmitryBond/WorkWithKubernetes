@@ -8,7 +8,7 @@
     <li>
       <a href="#Создайте-namespace-для-деплоя-простого-веб-приложения">Создайте namespace для деплоя простого веб приложения.</a>
     </li>
-    <li><a href="#Напишите-deployments-файл-для-установки-в-Kubernetes-простого-веб-приложения,-например-https://github.com/crccheck/docker-hello-world.">Напишите deployments файл для установки в Kubernetes простого веб приложения, например https://github.com/crccheck/docker-hello-world.</a></li>
+    <li><a href="#Напишите-deployments-файл-для-установки-в-Kubernetes-простого-веб-приложения,-например-https://github.com/crccheck/docker-hello-world">Напишите deployments файл для установки в Kubernetes простого веб приложения, например https://github.com/crccheck/docker-hello-world.</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -69,5 +69,5 @@ metadata:
   <p align="left">
 
     
-<!-- CREATE NAMESPACE DEPLOY -->
-## Создайте namespace для деплоя простого веб приложения.
+<!-- FILE FOR INSTALL WEB -->    
+## Напишите deployments файл для установки в Kubernetes простого веб приложения, например https://github.com/crccheck/docker-hello-world.
