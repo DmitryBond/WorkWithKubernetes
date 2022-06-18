@@ -127,6 +127,68 @@ spec:
 
     
 <!-- WRITE AND INSTALL INGRESS RULE -->    
-## Напишите и установите Ingress rule для получения доступа к своему приложению.
+## Напишите и установите Ingress rule для получения доступа к своему приложению
     
+    1. Создайте манифест `ingress-host-rule.yaml`, который определяет вход, отправляющтй трафик в службу.
+
+   ```JS
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: webapp-nmsc
+  labels:
+    app: web
+   ```
+  <p align="left">
+  <a href="https://github.com/DmitryBond/WorkWithKubernetes/blob/main/images/get_namespaces.PNG">
+    <img src="images/get_namespaces.PNG">
+  </a>
+  <p align="left">
+
     
+<!-- FILE FOR INSTALL WEB -->    
+## Напишите deployments файл для установки в Kubernetes простого веб приложения.
+    
+  Создайте файл манифеста для deployment `deploy-hello-world.yaml`
+   ```JS
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: webapp-hello-world-ingress
+  namespaces: 
+spec:
+  rules:
+  - host: hello-world.local
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: web
+            port:
+              number: 8080
+   ```
+ 2. Создайте объект Ingress
+  ```sh
+  kubectl apply -f deploy-hello-world.yaml
+  ```
+  Вывод должен быть:
+  ```sh
+  ingress.networking.k8s.io/webapp-hello-world-ingress configured
+  ```
+  3. Убедитесь, что IP-адрес установлен:
+  ```sh
+  kubectl get ingress
+  ```
+  <p align="left">
+  <a href="https://github.com/DmitryBond/WorkWithKubernetes/blob/main/images/get_ingress.png">
+    <img src="images/get_ingress.png">
+  </a>
+  <p align="left">
+    
+  4. Добавьте строку в конец /etc/hosts файла на вашем компьютере:
+  ```sh
+      ADDRESS         HOSTS
+  192.168.59.101 hello-world.local 
+  ```
