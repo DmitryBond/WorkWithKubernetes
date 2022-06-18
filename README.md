@@ -71,3 +71,36 @@ metadata:
     
 <!-- FILE FOR INSTALL WEB -->    
 ## Напишите deployments файл для установки в Kubernetes простого веб приложения.
+    
+  Файл манифеста для deployment `deploy-hello-world.yaml`
+   ```JS
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deploy-webapp-hello-world
+  labels:
+    app: web
+spec:
+  selector:
+    matchLabels:
+      project: dwhw
+  template:
+    metadata:  
+      labels:
+        project: dwhw
+    spec:
+      containers:
+        - name: cont-hello-world
+          image: crccheck/hello-world
+          ports:
+            - containerPort: 8000
+   ```
+    Запускаем файл
+  <p align="left">
+  <a href="https://github.com/DmitryBond/WorkWithKubernetes/blob/main/images/deploy_hello_world.png">
+    <img src="images/deploy_hello_world.png">
+  </a>
+  <p align="left">
+    
+  
+    
