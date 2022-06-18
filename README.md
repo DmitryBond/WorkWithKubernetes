@@ -114,6 +114,7 @@ spec:
 ## Установите в кластер ingress контроллер.
 
   Включите входную надстройку для Minikube.
-      ```sh
-      minikube addons enable ingress
-      ```
+ 
+  ```sh
+  minikube addons enable ingress
+  ```
