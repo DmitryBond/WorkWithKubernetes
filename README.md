@@ -52,4 +52,18 @@
 <!-- CREATE NAMESPACE DEPLOY -->
 ## Создайте namespace для деплоя простого веб приложения.
     
-Создание объекта namespace
+  Создание объекта namespace  `web-namespace.yaml`
+   ```JS
+   ---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: webapp-nmsc
+  labels:
+    app: web
+   ```
+          <p align="center">
+  <a href="https://github.com/DmitryBond/WorkWithKubernetes/blob/main/images/start_kube.PNG">
+    <img src="images/start_kube.PNG">
+  </a>
+  <p align="center">
