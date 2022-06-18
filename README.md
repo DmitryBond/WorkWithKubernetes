@@ -118,6 +118,7 @@ spec:
   ```sh
   minikube addons enable ingress
   ```
+    
   <p align="left">
   <a href="https://github.com/DmitryBond/WorkWithKubernetes/blob/main/images/enable_ingress.png">
     <img src="images/enable_ingress.png">
